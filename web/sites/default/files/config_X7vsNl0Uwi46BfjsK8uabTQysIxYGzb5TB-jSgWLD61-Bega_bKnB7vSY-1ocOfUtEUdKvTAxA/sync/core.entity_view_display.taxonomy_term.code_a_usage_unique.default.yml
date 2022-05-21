@@ -1,0 +1,51 @@
+uuid: f206d412-7fbc-4979-9616-26058c010cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.code_a_usage_unique.field_email
+    - field.field.taxonomy_term.code_a_usage_unique.field_status
+    - field.field.taxonomy_term.code_a_usage_unique.field_user_email
+    - taxonomy.vocabulary.code_a_usage_unique
+  module:
+    - text
+id: taxonomy_term.code_a_usage_unique.default
+targetEntityType: taxonomy_term
+bundle: code_a_usage_unique
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_email:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_status:
+    weight: 1
+    label: above
+    settings:
+      format: custom
+      format_custom_true: Utilisé
+      format_custom_false: 'Non utilisé'
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_user_email:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

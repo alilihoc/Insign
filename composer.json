@@ -8,18 +8,22 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.2",
         "drupal/core-composer-scaffold": "^8.8",
-        "drupal/core-dev": "8.9.10",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "drupal/unique_entity_title": "1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -88,5 +92,10 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "8.9.10",
+        "drupal/vardumper": "^1.6",
+        "drush/drush": "^10.6"
     }
 }

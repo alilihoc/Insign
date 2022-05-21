@@ -1,0 +1,7 @@
+services:
+  route_subscriber:
+    class: Drupal\insign_early_access\Routing\RouteSubscriber
+    tags:
+      - {name: event_subscriber }
+  insign_early_access.service.extract:
+    class: Drupal\insign_early_access\Service\ExtractService

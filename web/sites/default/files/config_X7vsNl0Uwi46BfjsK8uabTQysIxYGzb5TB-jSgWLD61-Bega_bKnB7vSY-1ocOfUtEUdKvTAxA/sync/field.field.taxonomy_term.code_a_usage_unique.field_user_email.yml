@@ -1,0 +1,19 @@
+uuid: a10b2b6a-e10a-4b8e-9b55-06b31a247593
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_user_email
+    - taxonomy.vocabulary.code_a_usage_unique
+id: taxonomy_term.code_a_usage_unique.field_user_email
+field_name: field_user_email
+entity_type: taxonomy_term
+bundle: code_a_usage_unique
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

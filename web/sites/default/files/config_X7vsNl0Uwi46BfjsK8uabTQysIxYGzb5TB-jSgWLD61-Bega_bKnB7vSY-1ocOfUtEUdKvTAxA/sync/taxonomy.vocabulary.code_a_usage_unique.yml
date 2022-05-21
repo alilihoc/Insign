@@ -1,0 +1,8 @@
+uuid: f6d12728-e96c-4cfb-8c99-ff33d008332d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Code à usage unique'
+vid: code_a_usage_unique
+description: ''
+weight: 0

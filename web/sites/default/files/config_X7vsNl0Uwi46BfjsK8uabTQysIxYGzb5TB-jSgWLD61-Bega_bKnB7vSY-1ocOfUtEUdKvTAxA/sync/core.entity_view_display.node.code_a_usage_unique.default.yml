@@ -1,0 +1,29 @@
+uuid: faf87069-49ed-4ac1-9020-b904e8931b4f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.code_a_usage_unique.body
+    - node.type.code_a_usage_unique
+  module:
+    - text
+    - user
+id: node.code_a_usage_unique.default
+targetEntityType: node
+bundle: code_a_usage_unique
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

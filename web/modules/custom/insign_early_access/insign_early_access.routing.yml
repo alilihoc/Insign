@@ -1,0 +1,8 @@
+insign_early_access.export:
+  path: '/export/users/codes'
+  defaults:
+    _title: 'Exports'
+    _controller: '\Drupal\insign_early_access\Controller\ExportController::exportUsersCode'
+  requirements:
+    _permission: 'access content'
+    _user_is_logged_in: 'TRUE'

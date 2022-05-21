@@ -1,0 +1,77 @@
+uuid: e025c4e6-03a7-4ab6-8593-8b6ece3f286c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.code_a_usage_unique.field_email
+    - field.field.taxonomy_term.code_a_usage_unique.field_status
+    - field.field.taxonomy_term.code_a_usage_unique.field_user_email
+    - taxonomy.vocabulary.code_a_usage_unique
+  module:
+    - path
+    - text
+id: taxonomy_term.code_a_usage_unique.default
+targetEntityType: taxonomy_term
+bundle: code_a_usage_unique
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_status:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_user_email:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 3
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,21 @@
+uuid: 789327f2-7fc4-43b7-96e4-7e538077365c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_status
+    - taxonomy.vocabulary.code_a_usage_unique
+id: taxonomy_term.code_a_usage_unique.field_status
+field_name: field_status
+entity_type: taxonomy_term
+bundle: code_a_usage_unique
+label: Status
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
